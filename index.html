@@ -1,0 +1,73 @@
+<!-- Sukurkite viktorinos puslapį, kuriame vartotojas gauna 5 klausimus. Gale viktorinos yra mygtukas baigti. Paspaudus mygtuką baigti, vartotojas gauna rezultatą, kiek taškų surinko. Bei prie kiekvieno klausimo nurodykite, ar vartotojas teisingai į jį atsakė.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Quiz</title>
+  <link rel="icon" href="./pictures/quiz.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="col-12 d-flex flex-column align-items-center text-center my-5">
+    <img src="./pictures/speech-bubble.png">
+        <!-- question 1 -->
+        <div class="my-3" id="question1">
+            <p class="my-2 title">What is the capital of France?</p>
+                <div class="color d-flex flex-column text-center">
+                    <p onclick="markSelectedAnswer('question1', 'berlin')" id="berlin" class="option answer-option my-1">A) Berlin</p>
+                    <p onclick="markSelectedAnswer('question1', 'london')" id="london" class="option answer-option my-1">B) London</p>
+                    <p onclick="markSelectedAnswer('question1', 'paris')" id="paris"  class="option answer-option my-1">C) Paris</p>
+                </div>
+            <p id="displayCorrectAnswer1" class="correct_answer px-4"></p>
+        </div>
+        <!-- question 2 -->
+        <div class="my-3" id="question2">
+            <p class="my-2 title">How many continents are there on Earth?</p>
+                <div class="color d-flex flex-column">
+                    <p onclick="markSelectedAnswer('question2', 'five')" id="five" class="option answer-option my-1">A) 5</p>
+                    <p onclick="markSelectedAnswer('question2', 'seven')" id="seven" class="option answer-option my-1">B) 7</p>
+                    <p onclick="markSelectedAnswer('question2', 'six')" id="six"  class="option answer-option my-1">C) 6</p>
+                </div>
+            <p id="displayCorrectAnswer2" class="correct_answer my-2"></p>
+        </div>
+        <!-- question 3 -->
+        <div class="my-3" id="question3">
+            <p class="my-2 title">Which planet is known as the Red Planet?</p>
+                <div class="color d-flex flex-column">
+                    <p onclick="markSelectedAnswer('question3', 'mars')" id="mars" class="option answer-option my-1">A) Mars</p>
+                    <p onclick="markSelectedAnswer('question3', 'jupiter')" id="jupiter" class="option answer-option my-1">B) Jupiter</p>
+                    <p onclick="markSelectedAnswer('question3', 'saturn')" id="saturn"  class="option answer-option my-1">C) Saturn</p>
+                </div>
+            <p id="displayCorrectAnswer3" class="correct_answer my-2"></p>
+        </div>
+         <!-- question 4 -->
+        <div class="my-3" id="question4">
+            <p class="my-2 title">What gas do plants breathe in that humans and animals breathe out?</p>
+                <div class="color d-flex flex-column">
+                    <p onclick="markSelectedAnswer('question4', 'oxygen')" id="oxygen" class="option answer-option my-1">A) Oxygen</p>
+                    <p onclick="markSelectedAnswer('question4', 'dioxide')" id="dioxide" class="option answer-option my-1">B) Carbon Dioxide</p>
+                    <p onclick="markSelectedAnswer('question4', 'nitrogen')" id="nitrogen"  class="option answer-option my-1">C) Nitrogen</p>
+                </div>
+            <p id="displayCorrectAnswer4" class="correct_answer my-2"></p>
+        </div>
+        <!-- question 5 -->
+        <div class="my-3" id="question5">
+            <p class="my-2 title">What is the largest mammal in the world?</p>
+                <div class="color d-flex flex-column">
+                    <p onclick="markSelectedAnswer('question5', 'elephant')" id="elephant" class="option answer-option my-1">A) Elephant</p>
+                    <p onclick="markSelectedAnswer('question5', 'whale')" id="whale" class="option answer-option my-1">B) Blue Whale</p>
+                    <p onclick="markSelectedAnswer('question5', 'giraffe')" id="giraffe"  class="option answer-option my-1">C) Giraffe</p>
+                </div>
+            <p id="displayCorrectAnswer5" class="correct_answer px-5 "></p>
+        </div>
+  <button onclick="calculateScore()" class="btn btn-lightpx-4 py-2 check" id="hide">Check Answers!</button>
+  <p class="result rounded-4 text-center mt-4 pt-2" id="result"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
