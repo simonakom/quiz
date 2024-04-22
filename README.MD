@@ -1,7 +1,9 @@
+# <span><img src="./pictures/quiz.png" alt=quiz style="height: 1em; vertical-align: middle;"></span> Quiz 
 
-# Quiz 
-
-This assignment is about creating a quiz usign javascript and bootstrap. Practising "DOM" (Document Object Model).
+It is a responsive quiz created using Bootsrap and JavaScript. Practising "DOM".
 
 <h4>🔹 You can do a quiz - <a href="https://simonakom.github.io/quiz/index.html" style="font-size:small;">here!</a><h4>
+
+
+
 
